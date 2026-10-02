@@ -1,5 +1,8 @@
 # Rojas Portfolio Site
 
+# Logo
+I requested Chatgpt to help come up with a simple logo design using my initials. Wanted to mention that and give credit.
+
 # Headline
 Gabriel Rojas: Student and Future Tech Specialist
 
