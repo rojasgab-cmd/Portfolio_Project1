@@ -70,8 +70,8 @@ p {
     line-height: 1.5em;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 5px;
-    margin-inline-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     unicode-bidi: isolate;
     display: block;
 }
