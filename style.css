@@ -44,13 +44,14 @@ nav ul li a:hover {
     text-align: center;
     margin: var(--standard-gap);
     font-family: garamond, serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     letter-spacing: 0.05em;
 }
 
 .h2 {
     font-family: garamond, serif;
     font-size: 2em;
+    border-bottom: 1px solid var(--secondary-theme);
 }
 
 body {
