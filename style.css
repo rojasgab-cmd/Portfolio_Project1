@@ -13,12 +13,6 @@ header {
     margin: 0 var(--standard-gap);
 }
 
-.logo {
-      width: 150px;
-    display: block;
-    margin: 0 auto;
-    transform: translateX(+55px);
-}
 
 nav ul {
     list-style: none;
