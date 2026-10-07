@@ -40,11 +40,16 @@ nav ul li a:hover {
     color: var(--primary-bg);
 }
 
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 #intro {
     text-align: center;
     margin: var(--standard-gap);
     font-family: garamond, serif;
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 0.05em;
 }
 
@@ -63,6 +68,9 @@ body {
     font-family: georgia, serif;
     background: var(--primary-bg);
     color: var(--primary-text);
+    padding: 5em;
+    border-top: 1.5em solid var(--primary-theme);
+    margin: 0;
 }
 
 p {
