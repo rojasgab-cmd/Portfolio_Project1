@@ -55,9 +55,13 @@ nav ul li a:hover {
 
 body {
     font-family: georgia, serif;
-    font-size: 1em;
     background: var(--primary-bg);
     color: var(--primary-text);
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 
