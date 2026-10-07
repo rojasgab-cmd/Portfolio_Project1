@@ -14,10 +14,7 @@ header {
 }
 
 #logo {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: auto;
+    left:auto
 }
 
 nav ul {
