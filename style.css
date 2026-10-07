@@ -17,7 +17,7 @@ header {
       width: 150px;
     display: block;
     margin: 0 auto;
-    transform: translateX(-3px);
+    transform: translateX(-20px);
 }
 
 nav ul {
