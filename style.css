@@ -48,10 +48,15 @@ nav ul li a:hover {
     letter-spacing: 0.05em;
 }
 
-.h2 {
+h2 {
     font-family: garamond, serif;
     font-size: 2em;
     border-bottom: 1px solid var(--secondary-theme);
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
 
 body {
@@ -61,8 +66,14 @@ body {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    unicode-bidi: isolate;
+    display: block;
 }
 
 
