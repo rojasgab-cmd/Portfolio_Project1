@@ -31,6 +31,17 @@ nav ul li a {
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: var(--secondary-theme);
+    color: var(--primary-bg);
+}
+
+#intro {
+    text-align: center;
+    margin: var(--standard-gap);
 }
 
 body {
