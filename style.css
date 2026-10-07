@@ -13,10 +13,6 @@ header {
     margin: 0 var(--standard-gap);
 }
 
-#logo {
-    left:auto
-}
-
 nav ul {
     list-style: none;
     display: flex;
