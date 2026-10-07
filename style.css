@@ -1,7 +1,36 @@
 :root {
-    --primary-bg: #e3e3e3;
-    --primary-text: #444;
+    --primary-bg: #E6E8E6;
+    --primary-text: #3F403F;
+    --secondary-bg: #CED0CE;
+    --primary-theme: #9FB8AD;
+    --secondary-theme: #475841;
     --standard-gap: 40px;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 var(--standard-gap);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--secondary-theme);
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--primary-theme);
+    border-radius: 30px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 body {
@@ -14,6 +43,3 @@ body {
     margin: var(--standard-gap);
 }
 
-.wayfinder {
-    background: green;
-}
