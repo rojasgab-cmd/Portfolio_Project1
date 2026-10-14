@@ -114,3 +114,9 @@ p {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .50 em;
+}
