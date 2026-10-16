@@ -79,6 +79,10 @@ section {
     unicode-bidi: isolate;
 }
 
+main {
+    padding: 5em;
+}
+
 #intro {
     text-align: center;
     margin: var(--standard-gap);
@@ -98,7 +102,7 @@ body {
     font-family: georgia, serif;
     background: var(--primary-bg);
     color: var(--primary-text);
-    padding: 5em 0;
+    padding: 0;
     border-top: 1.5em solid var(--primary-theme);
     margin: 0;
 }
