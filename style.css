@@ -129,7 +129,6 @@ p {
 #projects {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, minmax(100px, auto));
     gap: 1em;
 }
 
