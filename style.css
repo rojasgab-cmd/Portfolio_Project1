@@ -19,12 +19,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Keep the contents arranged vertically */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* Spacing around the logo and navigation */
     padding: 40px 20px;
 }
 
