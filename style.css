@@ -77,6 +77,10 @@ nav ul li a:hover {
     color: var(--primary-bg);
 }
 
+nav ul li a:focus-visible {
+    outline: 3px solid var(--secondary-theme);
+    outline-offset: 5px;
+}
 
 section {
     display: block;
