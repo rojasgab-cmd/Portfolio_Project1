@@ -1,0 +1,175 @@
+:root {
+    --primary-bg: #E6E8E6;
+    --primary-text: #3F403F;
+    --secondary-bg: #CED0CE;
+    --primary-theme: #9FB8AD;
+    --secondary-theme: #475841;
+    --standard-gap: 40px
+}
+
+/* Dark Mode Palette */
+:root[data-theme="dark"] {
+    --primary-bg: #3A3B3C;
+    --primary-text: #E6E8E6;
+    --secondary-bg: #626262;
+    --primary-theme: #475841;
+    --secondary-theme: #9FB8AD;
+}
+
+header {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* AI Prompt: Put a background image in the header that covers the entire header and is centered. 
+Make sure it is behind the "logo" image and does not repeat. 
+Make sure the header is responsive and looks good on all screen sizes. */
+
+#header {
+    background-image: url("images/grain_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+
+#logo img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1 / -1);
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 601px) {
+    nav ul {
+        grid-template-columns: repeat(2, minmax(100px, 20em));
+    }
+}
+
+@media (min-width: 1001px) {
+    nav ul {
+        grid-template-columns: repeat(3, minmax(100px, 20em));
+    }
+}
+
+nav ul li a {
+    color: var(--secondary-theme);
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--primary-theme);
+    border-radius: 50px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav ul li a:hover {
+    background: var(--secondary-theme);
+    color: var(--primary-bg);
+}
+
+nav ul li a:focus-visible {
+    outline: 3px solid var(--secondary-theme);
+    outline-offset: 5px;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+main {
+    padding-left: 5em;
+    padding-right:5em;
+}
+
+#intro {
+    text-align: center;
+    margin: var(--standard-gap);
+    font-family: garamond, serif;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-family: garamond, serif;
+    font-size: 2em;
+    border-bottom: 1px solid var(--secondary-theme);
+    font-weight: bold;
+}
+
+body {
+    font-family: georgia, serif;
+    background: var(--primary-bg);
+    color: var(--primary-text);
+    padding: 0;
+    border-top: 1.5em solid var(--primary-theme);
+    margin: 0;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    display: block;
+}
+
+#projects article {
+    background: var(--secondary-bg);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+/*AI Prompt used for section below: modify the css grid for the projects section so that 
+ it uses a 3 column layout when above 1000px and two column layout while above 600px*/
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+@media (min-width: 601px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1001px) {
+    #projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .50 em;
+}
