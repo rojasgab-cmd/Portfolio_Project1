@@ -4,7 +4,16 @@
     --secondary-bg: #CED0CE;
     --primary-theme: #9FB8AD;
     --secondary-theme: #475841;
-    --standard-gap: 40px;
+    --standard-gap: 40px
+}
+
+/* Dark Mode Palette */
+:root[data-theme="dark"] {
+    --primary-bg: #3A3B3C;
+    --primary-text: #E6E8E6;
+    --secondary-bg: #626262;
+    --primary-theme: #475841;
+    --secondary-theme: #9FB8AD;
 }
 
 header {
