@@ -12,6 +12,10 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = isDark ? "Light mode" : "Dark mode";
 });
 
+/* AI Prompt Used: Use the scrollmagic js library to animate the projects section of the website. 
+Make it so the projects reveal when scrolled down to and disappear when scrolled away from. 
+Write the javascript code in the utilities file and call it to the html using functions. */
+
 function initSectionScrollAnimations() {
     const sections = document.querySelectorAll("#about, #projects, #contact");
 
