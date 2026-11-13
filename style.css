@@ -177,6 +177,23 @@ p {
     gap: 1em;
 }
 
+#projects.scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#projects.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #projects.scroll-reveal {
+        transition: none;
+    }
+}
+
 /*AI Prompt used for section below: modify the css grid for the projects section so that 
  it uses a 3 column layout when above 1000px and two column layout while above 600px*/
 

@@ -11,3 +11,28 @@ themeToggle.addEventListener("click", () => {
     themeToggle.setAttribute("aria-pressed", String(isDark));
     themeToggle.textContent = isDark ? "Light mode" : "Dark mode";
 });
+
+function initProjectScrollAnimation() {
+    const projects = document.querySelector("#projects");
+
+    if (!projects) {
+        return;
+    }
+
+    if (typeof ScrollMagic === "undefined") {
+        console.error("ScrollMagic did not load; project scroll animation is unavailable.");
+        return;
+    }
+
+    projects.classList.add("scroll-reveal");
+
+    const controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+        triggerElement: projects,
+        triggerHook: 0.8
+    })
+        .setClassToggle(projects, "is-visible")
+        .addTo(controller);
+}
+
+initProjectScrollAnimation();
