@@ -12,27 +12,29 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = isDark ? "Light mode" : "Dark mode";
 });
 
-function initProjectScrollAnimation() {
-    const projects = document.querySelector("#projects");
+function initSectionScrollAnimations() {
+    const sections = document.querySelectorAll("#about, #projects, #contact");
 
-    if (!projects) {
+    if (sections.length === 0) {
         return;
     }
 
     if (typeof ScrollMagic === "undefined") {
-        console.error("ScrollMagic did not load; project scroll animation is unavailable.");
+        console.error("ScrollMagic did not load; section scroll animations are unavailable.");
         return;
     }
 
-    projects.classList.add("scroll-reveal");
-
     const controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({
-        triggerElement: projects,
-        triggerHook: 0.8
-    })
-        .setClassToggle(projects, "is-visible")
-        .addTo(controller);
+    sections.forEach((section) => {
+        section.classList.add("scroll-reveal");
+
+        new ScrollMagic.Scene({
+            triggerElement: section,
+            triggerHook: 0.8
+        })
+            .setClassToggle(section, "is-visible")
+            .addTo(controller);
+    });
 }
 
-initProjectScrollAnimation();
+initSectionScrollAnimations();

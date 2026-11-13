@@ -177,19 +177,19 @@ p {
     gap: 1em;
 }
 
-#projects.scroll-reveal {
+.scroll-reveal {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-#projects.scroll-reveal.is-visible {
+.scroll-reveal.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-    #projects.scroll-reveal {
+    .scroll-reveal {
         transition: none;
     }
 }
